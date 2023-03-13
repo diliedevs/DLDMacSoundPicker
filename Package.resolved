@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "dldfoundation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/diliedevs/DLDFoundation",
+      "state" : {
+        "revision" : "377b11448790d6f5b2d16ee70fd9d97b14105727",
+        "version" : "1.4.2"
+      }
+    },
+    {
+      "identity" : "swift-system",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-system.git",
+      "state" : {
+        "revision" : "025bcb1165deab2e20d4eaba79967ce73013f496",
+        "version" : "1.2.1"
+      }
+    }
+  ],
+  "version" : 2
+}

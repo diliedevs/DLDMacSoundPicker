@@ -1,5 +1,5 @@
 //
-//  MacSoundPickerItem.swift
+//  SoundItem.swift
 //  
 //
 //  Created by Dionne Lie Sam Foek  on 19/02/2023.
@@ -42,5 +42,11 @@ struct SoundItem: View {
     
     func playSound() {
         if isHovering { sound.play() }
+    }
+}
+
+struct SoundItem_Previews: PreviewProvider {
+    static var previews: some View {
+        SoundItem(for: .first, playDelay: 0.25)
     }
 }

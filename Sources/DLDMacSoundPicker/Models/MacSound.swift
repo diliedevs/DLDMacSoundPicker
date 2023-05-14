@@ -31,8 +31,8 @@ public struct MacSound: Codable, Identifiable, Comparable, Hashable {
         }
     }
     
-    public static func allSounds() -> [MacSound] {
-        LibraryDomain.allCases.flatMap(\.sounds).sorted()
+    public static func allSounds(in domains: [LibraryDomain] = LibraryDomain.allCases) -> [MacSound] {
+        domains.flatMap(\.sounds).sorted()
     }
     
     public func play() {

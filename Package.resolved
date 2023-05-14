@@ -10,6 +10,33 @@
       }
     },
     {
+      "identity" : "dldswiftui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/diliedevs/DLDSwiftUI",
+      "state" : {
+        "revision" : "c99c0811d2c7f0f3531abbafd41556c9739875aa",
+        "version" : "1.12.0"
+      }
+    },
+    {
+      "identity" : "dynamiccolor",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yannickl/DynamicColor",
+      "state" : {
+        "revision" : "d9beca13ca85baa50ee29832d0db5129fba69630",
+        "version" : "5.0.1"
+      }
+    },
+    {
+      "identity" : "sfsafesymbols",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SFSafeSymbols/SFSafeSymbols",
+      "state" : {
+        "revision" : "7cca2d60925876b5953a2cf7341cd80fbeac983c",
+        "version" : "4.1.1"
+      }
+    },
+    {
       "identity" : "swift-system",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-system.git",

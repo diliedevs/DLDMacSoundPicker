@@ -8,19 +8,19 @@
 
 import SwiftUI
 
-struct ToggleableEnvironmentKey: EnvironmentKey {
-    static var defaultValue: Bool = false
+public struct ToggleableEnvironmentKey: EnvironmentKey {
+    public static var defaultValue: Bool = false
 }
 
 extension EnvironmentValues {
-    var toggleable: Bool {
+    public var toggleable: Bool {
         get { self[ToggleableEnvironmentKey.self] }
         set { self[ToggleableEnvironmentKey.self] = newValue }
     }
 }
 
 extension View {
-    func toggleable(_ toggleable: Bool = true) -> some View {
+    public func toggleable(_ toggleable: Bool = true) -> some View {
         environment(\.toggleable, toggleable)
     }
 }

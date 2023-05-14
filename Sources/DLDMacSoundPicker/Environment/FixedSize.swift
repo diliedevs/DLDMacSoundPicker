@@ -8,19 +8,19 @@
 
 import SwiftUI
 
-struct FixedSizeEnvironmentKey: EnvironmentKey {
-    static var defaultValue: Bool = false
+public struct FixedSizeEnvironmentKey: EnvironmentKey {
+    public static var defaultValue: Bool = false
 }
 
 extension EnvironmentValues {
-    var fixedSize: Bool {
+    public var fixedSize: Bool {
         get { self[FixedSizeEnvironmentKey.self] }
         set { self[FixedSizeEnvironmentKey.self] = newValue }
     }
 }
 
 extension View {
-    func applyFixedSize(_ fixed: Bool = true) -> some View {
+    public func applyFixedSize(_ fixed: Bool = true) -> some View {
         environment(\.fixedSize, fixed)
     }
 }

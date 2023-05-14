@@ -8,10 +8,10 @@
 import SwiftUI
 import DLDSwiftUI
 
-struct MacSoundPicker: View {
-    let title: String
-    let sounds: [MacSound]
-    @Binding var selection: MacSound?
+public struct MacSoundPicker: View {
+    public let title: String
+    public let sounds: [MacSound]
+    @Binding public var selection: MacSound?
     
     @State private var sound: MacSound?
     @State private var isOn: Bool
@@ -20,7 +20,7 @@ struct MacSoundPicker: View {
     @Environment(\.fixedSize) private var fixedSize
     @Environment(\.toggleable) private var toggleable
     
-    init(_ title: String, sounds: [MacSound], selection: Binding<MacSound?>) {
+    public init(_ title: String, sounds: [MacSound], selection: Binding<MacSound?>) {
         self.title = title
         self.sounds = sounds
         _selection = selection
@@ -28,7 +28,7 @@ struct MacSoundPicker: View {
         _isOn = State(wrappedValue: selection.wrappedValue.isNotNil)
     }
     
-    var body: some View {
+    public var body: some View {
         Group {
             if toggleable {
                 Toggle(isOn: $isOn) {
